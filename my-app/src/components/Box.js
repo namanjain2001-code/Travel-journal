@@ -1,7 +1,7 @@
 export default function Box(props){
 return(
     <div className = "box">
-        <img src ={props.img}/>
+        <img className="box-left" src ={props.img}/>
         <div className = "box-right">
             <div className = "box-location">
                 <img src = "./images/Fill 219.png" />
@@ -10,7 +10,7 @@ return(
             </div>
             <div className = "box-main">
                 <h1>{props.title}</h1>
-                <p>{props.startDate +"-"+props.endDate}</p>
+                <p className="box-date">{props.startDate +"-"+props.endDate}</p>
                 <p>{props.detail}</p>
             </div>
         </div>
